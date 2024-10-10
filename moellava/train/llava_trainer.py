@@ -265,19 +265,9 @@ class LLaVATrainer(Trainer):
             print('model Save')
             if self.args.local_rank == 0 or self.args.local_rank == -1:
                 self.model.config.save_pretrained(output_dir)
-                
                 torch.save(weight_to_save, os.path.join(output_dir, f'mm_projector.bin'))
-                print('Save state')
                 self.state.save_to_json(os.path.join(output_dir, TRAINER_STATE_NAME))
-                print('save state Done')
 
-                if not self.args.save_only_model:
-                    # Save optimizer and scheduler
-                    print('save some thing else')
-                    self._save_optimizer_and_scheduler(output_dir)
-                    # Save RNG state
-                    self._save_rng_state(output_dir)
-                    print('finish save some thing else')
                 if self.args.push_to_hub:
                     self._push_from_checkpoint(output_dir)
 
