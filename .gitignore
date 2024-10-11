@@ -189,6 +189,10 @@ profile_default/
 ipython_config.py
 *.ipynb
 settings.json
+kaggle.json
+checkpoints
+checkpoint
+*.zip
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
 
