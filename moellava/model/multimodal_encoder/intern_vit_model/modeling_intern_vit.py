@@ -24,7 +24,7 @@ try:
     has_flash_attn = True
 except:
     print('FlashAttention is not installed.')
-    has_flash_attn = False
+has_flash_attn = False
 
 
 logger = logging.get_logger(__name__)
@@ -117,8 +117,6 @@ class InternAttention(nn.Module):
         self.embed_dim = config.hidden_size
         self.num_heads = config.num_attention_heads
         self.use_flash_attn = config.use_flash_attn and has_flash_attn
-        if config.use_flash_attn and not has_flash_attn:
-            print('Warning: Flash Attention is not available, use_flash_attn is set to False.')
         self.head_dim = self.embed_dim // self.num_heads
         if self.head_dim * self.num_heads != self.embed_dim:
             raise ValueError(
