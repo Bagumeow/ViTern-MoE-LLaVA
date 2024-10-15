@@ -190,6 +190,7 @@ ipython_config.py
 *.ipynb
 settings.json
 checkpoints
+kaggle.json
 checkpoint
 *.zip
 # Remove previous ipynb_checkpoints
