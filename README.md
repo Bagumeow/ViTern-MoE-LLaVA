@@ -1,41 +1,20 @@
 <p align="center">
     <img src="./assets/ChartLLamma.jpg" width="250" style="margin-bottom: 0.2;"/>
 <p>
-<h2 align="center"> ViTern-MoE-LLaVA: Intern VIT Mixture of Experts for Large Vision-Language Models</a></h2>
+<h2 align="center"> ViQwen-MoE-LLaVA: Intern VIT Mixture of Experts for Large Vision-Language Models</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 <h5 align="center"> This Repo is fork from MoE-LLaVa!! </h2>
 
 <h5 align="center">
     
-
-## 📣 News
-* ⏳⏳⏳ Training a stronger model under a higher image resolution (e.g 768 × 768).
-
-* ⏳⏳⏳ Training MoE-LLaVA-Qwen1.5 to support Chinese better.
-* **[2024.03.16]**  🎉 We release all stage2 models, cheching our [model zoo](#-model-zoo).
-* **[2024.02.03]**  🎉 We release a stronger [MoE-LLaVA-StableLM](https://huggingface.co/LanguageBind/MoE-LLaVA-StableLM-1.8B-4e-384). The average performance is close to LLaVA-1.5-7B by using **2.0B** sparse activated parameters, checking our [model zoo](#-model-zoo).
-* **[2024.02.02]**  🤝 Enjoying the [![Replicate demo and cloud API](https://replicate.com/camenduru/moe-llava/badge)](https://replicate.com/camenduru/moe-llava) and [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camenduru/MoE-LLaVA-jupyter/blob/main/MoE_LLaVA_jupyter.ipynb), created by [@camenduru](https://github.com/camenduru), who generously supports our research!
-* **[2024.02.01]**  🔥 People who cannot access HF can now download the model through the <img src="https://github.com/PKU-YuanGroup/MoE-LLaVA/raw/main/assets/modelscope_logo.png" width="20px" style="max-width: 100%;"> model scope, checking our [model zoo](#-model-zoo).
-* **[2024.01.30]**  🔥 We release a stronger [MoE-LLaVA-Phi2](https://huggingface.co/LanguageBind/MoE-LLaVA-Phi2-2.7B-4e-384). The average performance **surpasses LLaVA-1.5-7B by using 3.6B** sparse activated parameters, checking our [model zoo](#-model-zoo).
-* **[2024.01.27]**  🤗 [Hugging Face demo](https://huggingface.co/spaces/LanguageBind/MoE-LLaVA) and **all codes & datasets** are available now! Welcome to **watch** 👀 this repository for the latest updates.
-
 ## 😮 Highlights
+This is my graduate dissertation at IUH base on MoE-LLaVA we will train it on chart dataset with small, complex feature that got extract feature by InternViT 300M then go through Small-Language Model (SLM) that is Qwen 0.5B 
 
-MoE-LLaVA shows excellent performance in multi-modal learning.
-
-### 🔥 High performance, but with fewer parameters
-- with just **3B sparsely activated parameters**, MoE-LLaVA demonstrates performance comparable to the LLaVA-1.5-7B on various visual understanding datasets and even surpasses the LLaVA-1.5-13B in object hallucination benchmarks.
+This is our poster presentation:
 
 <p align="center">
-<img src="assets/intro0.jpg" width=55%>
-</p>
+    <img src="./assets/poster.png" style="margin-bottom: 0.2;"/>
 
-### 🚀 Simple baseline, learning multi-modal interactions with sparse pathways.
-- With the addition of **a simple MoE tuning stage**, we can complete the training of MoE-LLaVA on **8 A100 GPUs** within 1 days.
-
-<p align="center">
-<img src="assets/intro.jpg" width=65%>
-</p>
 
 ## 🤗 Demo
 
@@ -264,6 +243,6 @@ If you find our paper and code useful in your research, please consider giving a
 
 ## 🤝 Contributors
 
-<a href="https://github.com/PKU-YuanGroup/MoE-LLaVA/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PKU-YuanGroup/MoE-LLaVA" />
+<a href="https://github.com/Bagumeow/ViQwen-_MoE_Llava_Training/graphs/contributors">
+  <img src="https://avatars.githubusercontent.com/u/93193119?v=4&size=64" />
 </a>
